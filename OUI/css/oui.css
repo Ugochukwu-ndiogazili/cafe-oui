@@ -1,0 +1,597 @@
+html{
+    scroll-behavior: smooth;
+   }
+   
+   
+   @font-face {
+       font-family: "circular-std-medium-500";
+       src: url("../fonts/circular-std-medium-500.ttf");
+   }
+   
+   @font-face {
+       font-family: "Caveat-Regular";
+       src: url("../fonts/Caveat-Regular.ttf");
+   }
+   
+   @font-face {
+       font-family: CaveatBold;
+       src: url("../fonts/caveat.bold.ttf");
+   }
+   
+   @font-face {
+       font-family: "BookItalic";
+       src: url("../fonts/shellypalmer-circular-std-book-italic.ttf");
+   }
+   
+   @font-face {
+       font-family: CircularMedium;
+       src: url(Project/fonts/circular-std-medium-500.ttf);
+   }
+   
+   body{
+       background-image: url("../img/background.png");
+       background-size: 100vw;
+       margin: 0;
+       overflow-x: hidden;
+       background-attachment: fixed;
+   }
+   
+   .Logo{  
+       margin-top: 2vh;
+       margin-left: 3vw;
+       margin-right: 22vw;
+       min-width: 150px;  
+       max-width: 150px;
+   }
+   
+   nav{
+       display: flex;
+       position: fixed;
+       z-index: 100;
+       width: 100vw;
+       height: 10vh;
+       background-color: #00657C;
+       overflow: auto;
+       overflow: hidden;
+       white-space: nowrap;
+       
+   }
+   .navMenuUl{
+       list-style: none;
+       display: flex;
+       align-items: center;
+   }
+   .buttons{
+       
+       margin-right: 3vw;
+       font-size: 30px;   
+   }
+   
+   .button-book{
+       color: #00657C;
+       font-size: 30px;   
+   }
+   #customLetters{
+       display: flex;
+       justify-content: center;
+       color: #00657C;
+       width: 10vw;
+       background-color: #FBEED7;
+       border-radius: 25px;
+   }
+   
+   
+   header li a{
+       font-family: CaveatBold;
+       color: #FBEED7;
+       text-decoration: none;
+   }
+   
+   .squareforBooking{
+       margin-right: 5vw;
+   }
+   
+   .homepage{
+       background-color: rgba(251, 238, 215, 0.8);
+       font-family: "circular-std-medium-500";
+       font-size: 24px;
+       width: 40vw;
+       height: 80vh;
+       border-radius: 10px;
+       color: rgb(22, 101, 126);
+       padding-top: 260px;
+       padding-left: 20px;
+   }
+   
+   .menuButton{
+       margin-top: 50px;
+       background-color: rgb(22, 101, 126);
+       padding: 2%;
+       border-radius: 25px;
+       margin-left: 235px;
+       margin-right: 235px;
+       text-align: center;
+   }
+   
+   .menuButton > a{
+       color: #fbeed7;
+       text-decoration: none;
+       
+   }
+   
+   .homepage > h2{
+       color: rgb(22, 101, 126);
+       justify-content: left;
+   }
+   
+   .aboutus-page
+   {
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+   
+       margin-top: 10rem;
+   }
+   
+   .whyarewedifferent
+   {
+       grid-column: 1/3;
+       text-align: center;
+       font-size: 64px;
+       font-family: "Caveat-Regular";
+       color: #00657C;
+   }
+   
+   .whydifferent
+   {
+       grid-column: 1/3;
+       display: flex;
+       flex-wrap: wrap;
+       width: 45rem;
+       margin: auto;
+       justify-content: space-around;
+       flex-direction: row;
+       direction: row;
+       text-align: center;
+   }
+   
+   .whybox
+   {
+       width: 20rem;
+       height: 20rem;  
+       border: 5px solid #00657C;
+       border-radius: 2rem;
+       margin: 0.5rem;
+       background-color: rgba(251, 238, 215, 0.8);
+   }
+   
+   .coffeebeans
+   {
+       padding-top: 2rem;
+   }
+   
+   .supremebeans, .beansgreattaste
+   {
+       font-family: "circular-std-medium-500";
+       font-size: 24px;
+       margin-left: 1.5rem;
+       margin-right: 1.5rem;
+   }
+   
+   .supremebeans
+   {
+       color: #95261F;   
+   }
+   
+   .beansgreattaste
+   {
+       color: #00657C;
+   }
+   
+   .aboutus1
+   {
+       grid-column: 3/5;
+       grid-row: 1/3;
+       background-color: rgba(251, 238, 215, 0.8);
+       border-top-left-radius: 1rem;
+       border-bottom-left-radius: 1rem;
+   }
+   
+   .aboutus
+   {
+       font-size: 64px;
+       font-family: "Caveat-Regular";
+       color: #00657C;
+       text-align: center;
+   }
+   
+   .aboutustxt
+   {
+       font-family: "circular-std-medium-500";
+       font-size: 24px;
+       color: #00657C;
+       padding-left: 3rem;
+       padding-right: 6rem;
+       padding-top: 3rem;
+   }
+   
+   .menu
+   {
+       display: flex;
+       flex-direction: column;
+       background-color: rgba(251, 238, 215, 0.8);
+       margin-inline: 20vw;
+       border-radius: 1rem;
+       padding-inline: 1rem;
+   
+       margin-top: 10rem;
+   }
+   
+   #menuh1
+   {
+       text-align: center;
+       color: #95261F;
+       font-family: "circular-std-medium-500";
+       font-size: 64px;
+   }
+   
+   .menuh2
+   {
+       color: #95261F;
+       font-family: "Caveat-Regular";
+       font-size: 36px;
+   }
+   
+   .menulistA , .menulistB
+   {
+       list-style-type: none;
+       color: #95261F;
+       font-family: "circular-std-medium-500";
+       font-size: 24px;
+   }
+   
+   .menulistA li , .menulistB li
+   {
+       margin: 1rem 0;
+   }
+   
+   .EventMainBox
+   {
+       color: #16657E;
+       background-color: rgba(251, 238, 215, 0.8);
+   
+       display: flex;
+       flex-direction: column;
+       margin-inline: 15rem;
+       padding: 2rem;
+       border-radius: 1rem;
+       width: 60vw;
+       margin-top: 10rem;
+       font-family: "circular-std-medium-500";
+   
+   }
+   .EventMainBox #Eventh1
+   {
+       display: flex;
+       justify-content: center;
+   }
+   .eventbox
+   {
+       display: flex;
+       flex-direction: row;
+       gap: 1rem;
+   }
+   
+   #Eventh1
+   {
+       font-size: 64px;
+       font-family: "Caveat-Regular";
+   }
+   
+   .eventPicture
+   {
+       width: 20rem;
+   }
+   
+   .EventText
+   {
+       padding-top: 4rem;
+       font-size: 24px;
+   }
+   
+   .Reviewsh1
+   {
+       font-family: "circular-std-medium-500";
+       color: rgb(22, 101, 126);
+       font-size: 64px;
+       text-align: center;
+       background-color: rgba(251, 238, 215, 0.9);
+       padding: 3rem 0 0.5rem 0;
+   
+       margin:  10rem 0 0 0;
+   }
+   
+   .usernameReview
+   {
+       font-family: "circular-std-medium-500";
+       color: rgb(22, 101, 126);
+       padding-left: 5rem;
+       padding-right: 5rem;
+   }
+   
+   .padding-s
+   {
+       padding-top: 0.8rem;
+   }
+   
+   .padding-l
+   {
+       padding-top: 2rem;
+   }
+   .star
+   {
+       height: 2.5rem;
+   }
+   
+   .ppicture
+   {
+       height: 6rem;
+       padding-top: 1rem;
+   }
+   
+   .scroll-container
+   {
+       display: flex;
+       justify-content: flex-start;
+       animation: scroll 40s linear infinite;
+       width: calc(5*29rem);
+   }
+   
+   @keyframes scroll
+   {
+       0%{
+           transform: translateX(0);
+       }
+       100%{
+           transform: translateX(-100%);
+       }
+   }
+   .container
+   {
+       height: 70vh;
+       width: 100%;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       background-color: rgba(251, 238, 215, 0.9);
+       text-align: center;
+       overflow: hidden;
+       flex-direction: row;
+   }
+   
+   .box
+   {
+       height: 23rem;
+       width: 28rem;
+       border-radius: 1rem;
+       background-color: rgb(186, 211, 238);
+       padding: 4em 0 0 0;
+       margin-inline: 0.5rem;
+       display: flex;
+       justify-content: center;
+       text-align: center;
+       flex-shrink: 0;
+   }
+   
+   .ShareExpBox
+   {
+       display: flex;
+       flex-direction: column;
+       background-color: rgba(251, 238, 215, 0.9);
+       margin-inline: 20vw;
+       border-radius: 10px;
+       padding: 10px;
+       gap: 1rem;
+       color: #00657C;
+       font-size: 24px;
+   
+       margin-top: 10rem;
+   }
+   
+   .ShareExpH1
+   {
+       font-size: 64px;
+   }
+   
+   .ShareExpStarBox
+   {
+       display: flex;
+       flex-direction: column;
+   }
+   .ReviewStar
+   {
+       width: 2rem;  
+       aspect-ratio: 1;
+       background: #F8CA00;
+       clip-path: polygon(50% 0,
+         calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+         calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+         calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+         calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+        ); 
+   }
+   
+   input[type="checkbox"] 
+   {
+       accent-color: rgb(253, 253, 0);
+   }
+   
+   .ShareExpCommentBox
+   {
+       display: flex;
+       flex-direction: column;
+       background-color: #00657C;
+       border-radius: 5px;
+       padding: 10px;
+       color: #FBEED7;
+   }
+   .ShareExpCommentBox textarea
+   {
+       resize: none;
+       height: 8rem;
+       border-radius: 1rem;
+   }
+   
+   .SubmitReview
+   {
+       display: flex;
+       flex-direction: column;
+       margin-inline: 35%;
+       background-color: #00657C;
+       border-radius: 10px;
+       color: #FBEED7;
+       font-size: 34px;
+       padding: 1rem;
+   }
+   
+   input#Comments
+   {
+       width: 100%;
+   }
+   
+   .main-booking{
+       display: flex;
+       justify-content: center;
+       
+   }
+   .table1{
+       display: flex;
+       flex-direction: column;
+       background-color: #FBEED7;
+       border-radius: 25px;
+       height: 80vh;
+       max-height: 80vh;
+   
+       margin-top: 10rem;
+   }
+   
+   .BookingForm{
+       margin-left: 5vw;
+       margin-right: 5vw;
+       display: flex;
+       flex-direction: column;
+       
+   }
+   
+   .alert{
+       background-color: #FBEED7;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+   }
+   
+   #alertMessage{
+       color: #F8CA00;
+   }
+   .BookingForm input{
+       margin-bottom: 2vh;
+       box-sizing: border-box;
+       width: auto;
+       border: none;
+       border-bottom: 2px solid #95261F;
+       
+   }
+   .BookingForm label{
+       font-family: "Caveat-Regular";
+       color: #95261F;
+       font-size: 36px;
+   }
+   
+   .table1 h2{
+       display: flex;
+       justify-content: center;
+       font-family: BookItalic;
+       color: #95261F;
+       font-size: 36px;
+       margin-top: 6vh;
+   }
+   
+   .timeDiv{
+       display: inline-block;
+   }
+   
+   .book{
+       margin-right: 7vw;
+   }
+   .input-Div, #time{
+       display: inline;
+   }
+   
+   #bookDate{
+       width: 20vw;
+   }
+   
+   .tablebook-button{
+       align-items: center;
+       display: flex;
+       justify-content: center;
+       margin-top: 2vh;
+       border-radius: 20px;
+       background-color: #95261F;
+       height: 6vh;
+   }
+   
+   h3{
+   color: #FBEED7;
+   
+   }
+   
+   .time-Label{
+       position: static;
+       margin-left: 4.5vw;
+   }
+   
+   footer{
+       background-color: rgba(251, 238, 215, 0.8);
+       display: flex;
+       justify-content: space-around;
+       font-family: "circular-std-medium-500";
+       font-size: 24px;
+   
+       margin-top: 10rem;
+   }
+   
+   #instagram, #facebook, #x{
+       height: 60px;
+   }
+   
+   
+   .footerContent{
+       color: rgb(0, 101, 124);
+       padding: 2rem;
+   }
+   
+   .footerContent > p{
+       margin: 0;
+   }
+   
+   .footerContent > h3{
+       color: rgb(22, 101, 126);
+   }
+   
+   .warning
+   {
+       color: red;
+       font-size: 24px;
+       padding: 2rem;
+       font-family: "circular-std-medium-500";
+   
+   }
+   
+   .greenlight
+   {
+       color: green;
+       font-size: 24px;
+       padding: 2rem;
+       font-family: "circular-std-medium-500";
+   
+   }
